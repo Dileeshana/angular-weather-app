@@ -6,7 +6,7 @@ interface ienvironment {
     XRapidAPIKeyHeaderName: string;
     XRapidAPIKeyHeaderValue : string;
 }
-export const environment  : ienvironment = {
+const environment  : ienvironment = {
     production: false,
     weatherAPIBaseUrl: 'https://openweather43.p.rapidapi.com/weather',
     XRapidAPIHostHeaderName: 'X-RapidAPI-Host',
@@ -15,4 +15,4 @@ export const environment  : ienvironment = {
     XRapidAPIKeyHeaderValue: 'caf3224cc5msh2d424036bcdd4f8p197c19jsn6baafe53f428'
 };
 
-// export default environment
+export default environment
