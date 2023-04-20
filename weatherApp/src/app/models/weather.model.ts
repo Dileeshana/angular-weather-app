@@ -52,3 +52,11 @@ export interface WeatherData {
     sunset: number
   }
   
+interface ienvironment {
+    production:boolean;
+    weatherAPIBaseUrl:string;
+    XRapidAPIHostHeaderName : string;
+    XRapidAPIHostHeaderValue : string;
+    XRapidAPIKeyHeaderName: string;
+    XRapidAPIKeyHeaderValue : string;
+}
