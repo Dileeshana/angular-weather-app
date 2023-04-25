@@ -12,7 +12,7 @@ $shadow-light: rgba(255,255,255,0.1);
 	padding: 0;
 	box-sizing: border-box;
 }
-// boday tag not working
+
 body{
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	font-size: 16px;
@@ -25,113 +25,6 @@ body{
     align-items: center;
 }
 
-.container{
-    width: 500px;
-    height: 70vh;
-    background-color: $blue-2;
-    border-radius: 10px;
-    box-shadow: 10px 10px 10px $shadow-dark;
-}
-
-.upper-data{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-}
-
-.lower-data{
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 50%;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-.upper-data img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.weather-data{
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-color: $shadow-dark;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.location{
-    color: $white;
-    text-align: center;
-    font-size: 1.5em;
-}
-
-.temperature{
-    color: $white;
-    font-size: 6em;
-    text-align: center;
-    font-weight: 800;
-}
-
-.more-info{
-    color: $white;
-}
-
-.more-info-container{
-    flex: 1;
-    background-color: $shadow-light;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    margin-top: 1em;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.infor-block{
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-}
-
-.infor-label{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.infor-label img{
-    width: 1.7em;
-}
-
-.infor-label span{
-    color: $white;
-    font-size: 0.8em;
-}
-
-.infor-values{
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    color: $white;
-}
 
 .search{
     margin: 0 0 1em 0;

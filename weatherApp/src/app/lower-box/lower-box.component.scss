@@ -1,0 +1,16 @@
+.more-info{
+    color: $white;
+}
+
+.more-info-container{
+    flex: 1;
+    background-color: $shadow-light;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 1em;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
