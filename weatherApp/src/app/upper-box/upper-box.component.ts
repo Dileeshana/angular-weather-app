@@ -19,10 +19,10 @@ export class UpperBoxComponent implements OnInit{
     this.getWeatherData(this.cityName);
   }
 
-  onSubmit(){
-    this.getWeatherData(this.cityName);
-    this.cityName = '';
-  }
+  // onSubmit(){
+  //   this.getWeatherData(this.cityName);
+  //   this.cityName = '';
+  // }
 
   private getWeatherData(cityName: string) {
     this.weatherService.getWeatherData(cityName)
