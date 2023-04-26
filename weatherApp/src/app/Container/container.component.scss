@@ -1,4 +1,4 @@
-@import "./app/scss/variables.scss";
+@import "../scss/variables";
 
 .container{
     width: 500px;
@@ -26,11 +26,14 @@
         padding: 1em;
         display: flex;
         flex-direction: column;
-
-        
+       
     }
 }
 
+.search{
+    margin: 0 0 1em 0;
+    text-align: center;
+}
 
 
 

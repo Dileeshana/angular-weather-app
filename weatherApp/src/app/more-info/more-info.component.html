@@ -1,39 +1,27 @@
-<div class="infor-block">
-    <div class="infor-label">
-      <img src="assets/min1.png" alt="">
-      <span>min</span>
-    </div>
-    <div class="infor-values">
-      {{weatherData?.main?.temp_min| number: '1.0-0'}}°C
-    </div>
-</div>
+<app-weather-details 
+  iconSrc="assets/min1.png"
+  label="min"
+  value="weatherData?.main?.temp_min| number: '1.0-0'"
+  unit="°C"
+></app-weather-details>
 
-<div class="infor-block">
-    <div class="infor-label">
-      <img src="../assets/max1.png" alt="">
-      <span>max</span>
-    </div>
-    <div class="infor-values">
-      {{weatherData?.main?.temp_max| number: '1.0-0'}}°C
-    </div>
-</div>
+<app-weather-details 
+  iconSrc="assets/max1.png"
+  label="max"
+  value="weatherData?.main?.temp_max| number: '1.0-0'"
+  unit="°C"
+></app-weather-details>
 
-<div class="infor-block">
-    <div class="infor-label">
-        <img src="../assets/humidity3.png" alt="">
-        <span>humidity</span>
-    </div>
-    <div class="infor-values">
-        {{weatherData?.main?.humidity}}%
-    </div>
-</div>
+<app-weather-details
+  iconSrc="assets/humidity3.png"
+  label="humidity"
+  value="weatherData?.main?.humidity"
+  unit="%"
+></app-weather-details>
 
-<div class="infor-block">
-    <div class="infor-label">
-        <img src="../assets/wind1.png" alt="">
-        <span>Wind</span>
-    </div>
-    <div class="infor-values">
-        {{weatherData?.wind?.speed}} km/h
-    </div>
-</div>
+<app-weather-details
+  iconSrc="assets/wind1.png"
+  label="Wind"
+  value="weatherData?.wind?.speed"
+  unit="km/h"
+></app-weather-details>

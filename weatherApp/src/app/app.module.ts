@@ -8,7 +8,9 @@ import { FormsModule } from '@angular/forms';
 import { ContainerComponent } from './Container/container.component';
 import { UpperBoxComponent } from './upper-box/upper-box.component';
 import { LowerBoxComponent } from './lower-box/lower-box.component';
-import { MoreInfoComponent } from './more-info/more-info.component'
+import { MoreInfoComponent } from './more-info/more-info.component';
+import { SearchComponent } from './search/search.component';
+import { WeatherDetailsComponent } from './weather-details/weather-details.component'
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { MoreInfoComponent } from './more-info/more-info.component'
     ContainerComponent,
     UpperBoxComponent,
     LowerBoxComponent,
-    MoreInfoComponent
+    MoreInfoComponent,
+    SearchComponent,
+    WeatherDetailsComponent
   ],
   imports: [
     BrowserModule,
