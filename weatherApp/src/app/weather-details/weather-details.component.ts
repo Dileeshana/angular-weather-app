@@ -9,6 +9,6 @@ export class WeatherDetailsComponent {
 
   @Input() iconSrc!: string;
   @Input() label!: string;
-  @Input() value!: string;
+  @Input() value!: number;
   @Input() unit!: string;
 }

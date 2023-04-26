@@ -1,11 +1,11 @@
-<img src="assets/hot.jpg" alt="hot bg" ngIf="weatherData?.main?.temp > 15">
-<img src="assets/cold.jpg"  alt="cold bg" ngIf="weatherData?.main?.temp <= 15">
+<!-- <img src="assets/hot.jpg" alt="hot bg" *ngIf="weatherData?.main?.temp > 15"> -->
+<!-- <img src="assets/cold.jpg"  alt="cold bg" *ngIf="weatherData?.main?.temp <= 15"> -->
 
 <div class="weather-data">
     <div class="location">
-        {{weatherData?.name}}
+        {{weatherData?.name}}   <!-- Wellington -->
     </div>
     <div class="temperature">
-        {{ weatherData?.main?.temp | number: '1.0-0'}}°C
+         {{ weatherData?.main?.temp | number: '1.0-0'}} <!--15°C -->
     </div>
 </div>
