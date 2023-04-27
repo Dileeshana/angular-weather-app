@@ -8,6 +8,7 @@ import { WeatherData } from './models/weather.model';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+  [x: string]: any;
   constructor(private weatherService: WeatherService) {}
 
     cityName: string = 'Wellington';

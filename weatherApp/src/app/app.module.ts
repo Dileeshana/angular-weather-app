@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http'
 import { FormsModule } from '@angular/forms';
 import { ContainerComponent } from './Container/container.component';
-import { UpperBoxComponent } from './Container/upper-box/upper-box.component';
+import { UpperBoxComponent } from './Container/info-box/upper-box.component';
 import { LowerBoxComponent } from './Container/lower-box/lower-box.component';
 import { MoreInfoComponent } from './Container/lower-box/more-info/more-info.component';
 import { SearchComponent } from './search/search.component';
