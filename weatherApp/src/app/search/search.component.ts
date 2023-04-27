@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { WeatherData } from '../models/weather.model';
 import { WeatherService } from '../services/weather.service';
+import {} from '../app.component';
 
 @Component({
   selector: 'app-search',
@@ -8,27 +9,8 @@ import { WeatherService } from '../services/weather.service';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
-  constructor(private weatherService: WeatherService) {}
 
-    cityName: string = 'Wellington';
-    weatherData?: WeatherData;
-
-    ngOnInit(): void {
-        this.getWeatherData(this.cityName);
-    }
-    
-    onSubmit(){
-        this.getWeatherData(this.cityName);
-        this.cityName = '';
-    }
-    
-    private getWeatherData(cityName: string) {
-        this.weatherService.getWeatherData(cityName)
-        .subscribe({
-          next: (response) => {
-                this.weatherData= response;
-                console.log(response);
-            }
-      });
-  }
+  @Input() onSubmit(){}
+  @Input() cityName: any
+  
 }

@@ -1,31 +1,31 @@
 <app-weather-details 
-  iconSrc="assets/min1.png"
+  iconSrc="/src/assets/img/min1.png"
   label="min"
-  {value}="weatherData?.main?.temp_min| number: '1.0-0'" 
+  [value]="weatherData?.main?.temp_min| number: '1.0-0'" 
   unit="°C"
 ></app-weather-details>
 <!-- weatherData?.main?.temp_min| number: '1.0-0' -->
 
 <app-weather-details 
-  iconSrc="assets/max1.png"
+  iconSrc="/src/assets/img/max1.png"
   label="max"
-  {value}="weatherData?.main?.temp_max| number: '1.0-0'"
+  [value]="weatherData?.main?.temp_max| number: '1.0-0'"
   unit="°C"
 ></app-weather-details>
 <!-- weatherData?.main?.temp_max| number: '1.0-0' -->
 
 <app-weather-details
-  iconSrc="assets/humidity3.png"
+  iconSrc="/src/assets/img/humidity3.png"
   label="humidity"
-  {value}="weatherData?.main?.humidity"
+  [value]="weatherData?.main?.humidity | number"
   unit="%"
 ></app-weather-details>
 <!-- weatherData?.main?.humidity -->
 
 <app-weather-details
-  iconSrc="assets/wind1.png"
+  iconSrc="/src/assets/img/wind1.png"
   label="Wind"
-  {value}="weatherData?.wind?.speed"
+  [value]="weatherData?.wind?.speed | number"
   unit="km/h"
 ></app-weather-details>
 <!-- weatherData?.wind?.speed -->

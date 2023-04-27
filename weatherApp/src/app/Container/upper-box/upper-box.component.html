@@ -1,5 +1,8 @@
-<!-- <img src="assets/hot.jpg" alt="hot bg" *ngIf="weatherData?.main?.temp > 15"> -->
-<!-- <img src="assets/cold.jpg"  alt="cold bg" *ngIf="weatherData?.main?.temp <= 15"> -->
+<ng-container *ngIf="weatherData as wd">
+    <img src="/src/assets/img/hot.jpg" alt="hot bg" *ngIf="wd.main.temp > 15">
+    <img src="/src/assets/img/cold1.jpg"  alt="cold bg" *ngIf="wd.main.temp <= 15">
+
+</ng-container>
 
 <div class="weather-data">
     <div class="location">

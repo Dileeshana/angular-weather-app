@@ -6,5 +6,3 @@ export const environment = {
     XRapidAPIKeyHeaderName: 'X-RapidAPI-Key',
     XRapidAPIKeyHeaderValue: 'b389a34e2bmsh55f1b857c75a6e9p1cc3dbjsn43c96ae8b906'
 };
-
-// export default environment
