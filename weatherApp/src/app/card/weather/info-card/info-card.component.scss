@@ -1,7 +1,7 @@
 @import "/src/app/scss/variables.scss";
 
 :host {
-    display: block;
+    display: contents;
     flex: 1;
 
     .infor-block{
@@ -17,7 +17,7 @@
             align-items: center;
     
             img{
-                width: 100%;
+                width: 20%;
             }
             span{
                 color: $white;

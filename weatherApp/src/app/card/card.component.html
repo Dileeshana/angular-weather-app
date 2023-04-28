@@ -1,10 +1,16 @@
-<app-info
+<div class="info">
+  <app-info
   [temp]="weatherData?.main?.temp"
   [city]="weatherData?.name"
 ></app-info>
-<app-weather
-  [temp_min]="weatherData?.main?.temp_min"
-  [temp_max]="weatherData?.main?.temp_max"
-  [humidity]="weatherData?.main?.humidity"
-  [speed]="weatherData?.wind?.speed"
-></app-weather>
+</div>
+
+
+<div class="weather">
+  <app-weather
+    [temp_min]="weatherData?.main?.temp_min"
+    [temp_max]="weatherData?.main?.temp_max"
+    [humidity]="weatherData?.main?.humidity"
+    [speed]="weatherData?.wind?.speed"
+  ></app-weather>
+</div>

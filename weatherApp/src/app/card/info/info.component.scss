@@ -1,7 +1,6 @@
-@import "../../scss/variables.scss";
-
+@import "/src/app/scss/variables.scss";
 :host{
-    display: block;
+    // display: block;
     flex: 1;
     position: relative;
     overflow: hidden;
