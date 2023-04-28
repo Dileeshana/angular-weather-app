@@ -1,0 +1,13 @@
+<img src="assets/img/hot.jpg" alt="hot bg" *ngIf="temp && temp > 15" />
+<img src="assets/img/cold1.jpg" alt="cold bg" *ngIf="temp && temp <= 15" />
+
+<div class="weather-data">
+  <div class="location">
+    {{ city }}
+    <!-- Wellington -->
+  </div>
+  <div class="temperature">
+    {{ temp | number : "1.0-0" }}
+    <!--15°C -->
+  </div>
+</div>

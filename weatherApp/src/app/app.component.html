@@ -1,7 +1,7 @@
 <div class="search">
-  <app-search></app-search>
+  <app-search (search)="search($event)"></app-search>
 </div>
 
-<div>
-  <container></container>
+<div *ngIf="weatherData$ | async as weatherData">
+  <app-card [weatherData]="weatherData"></app-card>
 </div>

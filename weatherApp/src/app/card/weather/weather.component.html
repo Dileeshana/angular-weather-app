@@ -1,0 +1,34 @@
+<div class="more-info">
+    More Information
+</div>
+
+<div class="more-info-container">
+    <app-info-card
+        iconSrc="/src/assets/img/min1.png"
+        label="min"
+        [value]="temp_min| number: '1.0-0'"
+        unit=" °C"
+    ></app-info-card>
+
+    <app-info-card
+        iconSrc="/src/assets/img/max1.png"
+        label="max"
+        [value]="temp_max| number: '1.0-0'"
+        unit=" °C"
+    ></app-info-card>
+
+    <app-info-card
+        iconSrc="/src/assets/img/humidity3.png"
+        label="humidity"
+        [value]="humidity| number: '1.0-0'"
+        unit=" %"
+    ></app-info-card>
+
+    <app-info-card
+        iconSrc="/src/assets/img/wind1.png"
+        label="wind"
+        [value]="speed| number: '1.0-0'"
+        unit=" km/h"
+    ></app-info-card>
+   
+</div>

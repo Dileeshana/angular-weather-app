@@ -1,12 +1,11 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-weather-details',
-  templateUrl: './weather-details.component.html',
-  styleUrls: ['./weather-details.component.scss']
+  selector: 'app-info-card',
+  templateUrl: './info-card.component.html',
+  styleUrls: ['./info-card.component.scss']
 })
-export class WeatherDetailsComponent {
-
+export class InfoCardComponent {
   @Input() iconSrc!: string;
   @Input() label!: string;
   @Input() value!: string | null;

@@ -4,29 +4,27 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {HttpClientModule} from '@angular/common/http'
-import { FormsModule } from '@angular/forms';
-import { ContainerComponent } from './Container/container.component';
-import { UpperBoxComponent } from './Container/info-box/upper-box.component';
-import { LowerBoxComponent } from './Container/lower-box/lower-box.component';
-import { MoreInfoComponent } from './Container/lower-box/more-info/more-info.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SearchComponent } from './search/search.component';
-import { WeatherDetailsComponent } from './Container/lower-box/weather-details/weather-details.component'
+import { CardComponent } from './card/card.component';
+import { InfoComponent } from './card/info/info.component';
+import { WeatherComponent } from './card/weather/weather.component';
+import { InfoCardComponent } from './card/weather/info-card/info-card.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ContainerComponent,
-    UpperBoxComponent,
-    LowerBoxComponent,
-    MoreInfoComponent,
     SearchComponent,
-    WeatherDetailsComponent
+    CardComponent,
+    InfoComponent,
+    WeatherComponent,
+    InfoCardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

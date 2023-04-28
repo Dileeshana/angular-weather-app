@@ -1,3 +1,1 @@
-<form #form="ngForm" (submit)="onSubmit()">
-      <input type="text" placeholder="Search City" name="city" [(ngModel)]="cityName">
-</form>
+<input type="text" placeholder="Search City" name="city" [formControl]="city">
